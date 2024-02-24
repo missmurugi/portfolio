@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <!-- Favicons -->
+            <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+            <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+            <!-- Animate CSS CDN -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+            <style>
+            /* Hero section */
+            .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2.5rem;
+            max-width: 81.75rem;
+            margin: auto;
+            }
+
+            .h2{
+            display: inline;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            }
+
+            /* .hero img {
+            height: auto;
+            max-width: 50%;
+            display: block;
+            } */
+
+            .bio {
+            width: 81rem;
+            padding: 0.625rem;
+            border-radius: 6px;
+            box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+            }
+
+            .bio h1 {
+            margin-bottom: var(--bottom-margin);
+            }
+
+            .bio p {
+            line-height: var(--line-height);
+            padding: 0.3rem 0;
+            }
+            /* Hero section ends */
+
+            /* navbar starts */
+            li {
+                display: inline;
+            }
+
+            ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            }
+
+            li {
+            float: left;
+            }
+
+            li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+            li a:hover {
+            background-color: #111;
+            }
+            /* navbar ends */
+
+            /* Projects section */
+            .projects {
+            background-color: var(--bg-color);
+            padding: 32px 0;
+            margin-top: 2rem;
+            }
+
+            .project-pic {
+            width: 65%;
+            height: 60%;
+            }
+
+            .projects-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+
+            .projects-title {
+            text-align: center;
+            margin-bottom: 1rem;
+            }
+
+            .project-container {
+            text-align: center;
+            width: 21.875rem;
+            padding: 1rem;
+            }
+
+            .project-container p {
+            padding: 0.4rem;
+            }
+
+            .project-title {
+            margin-bottom: var(--bottom-margin);
+            }
+
+            .project-details {
+            margin-bottom: var(--bottom-margin);
+            }
+            /* Projects section ends */
+
+            /* Contacts section */
+            .contact {
+            margin-top: 2rem;
+            }
+
+            .contact h2 {
+            text-align: center;
+            margin-bottom: var(--bottom-margin-2);
+            }
+
+            .contact-form-container {
+            max-width: 29.75rem;
+            margin: 0 auto;
+            padding: 0.938rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px var(--secondary-shadow);
+            }
+
+            .contact-form-container label {
+            line-height: 2.7em;
+            font-weight: var(--bold-font);
+            color: #700eaf;
+            }
+
+            .contact-form-container textarea {
+            min-height: 6.25rem;
+            font-size: 14px;
+            }
+
+            .contact-form-container .input-field {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            border: 1px outset #28252a;
+            font-size: 0.875rem;
+            outline: none;
+            }
+
+            .input-field::placeholder {
+            padding: 0.5rem;
+            color: #28252a;
+            }
+
+            .submit-btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #daaff6;
+            border: 1px solid #28252a;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: var(--bold-font);
+            transition: var(--transition);
+            }
+
+            .submit-btn:hover {
+            background-color: #32bf55;
+            border: 1px solid #28252a;
+            cursor: pointer;
+            }
+            /* Contacts section ends */
+
+            /* Footer section */
+            footer {
+            background-color: var(--bg-color);
+            padding: 1.25rem;
+            text-align: center;
+            margin: 2rem 0 0;
+            }
+            /* Footer section ends */
+
+            /* Social buttons */
+            /* .socials {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: 1%;
+            bottom: 50%;
+            }
+
+            .socicon {
+            width: 2rem;
+            height: 2rem;
+            } */
+
+            /* Social button ends */
+
+            /* More about */
+            .more-about {
+            background-color: var(--bg-color);
+            padding: 1rem 6rem;
+            display: inline-block;
+            }
+
+            .more-about h2 {
+            margin-bottom: var(--bottom-margin);
+            text-align: left;
+            }
+
+            .more-about p {
+            line-height: var(--line-height);
+            padding: 0.4rem;
+            }
+            /* More about ends */
+
+            </style>
+            <title>Irene Murugi | Full Stack Developer</title>
+    </head>
+    <body>
+        <!-- navbar -->
+        <ul class="navbar" style="background-color: #333;">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+        <!-- Home Section -->
+        <section class="hero">
+                <!-- <img src="assets/images/me13.jpg" alt="jane-doe" loading="lazy" class="hero-img" /> -->
+                <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-title">Welcome to my portfolio</h2>
+                <p class="bio-text">
+                    Hello! I'm Irene Murugi, a passionate front-end developer with a love for crafting 
+                    visually appealing and user-centric websites. With a keen eye for design and 
+                    a commitment to seamless user experiences, I thrive in the dynamic and 
+                    ever-evolving world of web development.<br>
+                </p>
+                <p>
+                    👩‍💻 Journey into Front-End Development<br>
+                    My journey in the world of code began with a fascination for transforming ideas 
+                    into interactive and beautiful websites. As a front-end developer, I've had the privilege
+                     of working on projects that blend creativity with functionality, allowing users to engage
+                      with content in meaningful ways.<br>
+                </p>
+                <p>
+                    🌐 Tech Stack<br>
+                    I specialize in crafting engaging user interfaces using the latest front-end technologies.
+                </p>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section class="more-about">
+            <h2>About</h2>
+            <p class="bio-text">
+                🚀 What Drives Me<br>
+                I am driven by the belief that great design goes hand in hand with exceptional functionality. 
+                Every line of code I write is aimed at creating not just websites but digital experiences that 
+                leave a lasting impression. I am meticulous about details, from pixel-perfect layouts to smooth 
+                transitions and animations.
+            </p>
+            <p>
+                🎨 Design Enthusiast<br>
+                As a design enthusiast, I understand the importance of a harmonious marriage between code and aesthetics. 
+                My proficiency in HTML, CSS, and JavaScript is complemented by a deep appreciation for modern design 
+                principles, ensuring that each project I undertake is a blend of style and substance.
+            </p>
+            <p>
+                🌟 Let's Build Something Together!<br>
+                I am always on the lookout for exciting projects and collaborations where I can bring my passion for 
+                front-end development to the forefront. If you have a vision that needs a creative and technically 
+                adept touch, let's connect and turn it into reality!
+            </p>
+            <p>
+                📬 Get in Touch<br>
+                You can reach out to me through my email irene.nzole@gmail.com. I'm excited about the possibility 
+                of working together to create engaging and memorable digital experiences.
+                Let's bring ideas to life through code and design!
+            </p>
+        </section>
+
+        <!-- Projects section -->
+        <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Projects</h2>
+            <div class="projects-container">
+                <div class="project-container project-card">
+                    <h3 class="project-title">Hospital e-management system</h3>
+                    <p class="project-details">
+                        This project involves a hospital e-management system. The systems, add, updates, 
+                        and stores patients' records. It can also print out the patients prescription after the doctor's visit.
+                    </p>
+            </div>
+            
+            <div class="project-container project-card">
+                <h3 class="project-title">Meal Prep System</h3>
+                <p class="project-details">
+                    This project involves a meal prep plan where one can choose from based on their preferences and 
+                    storage duration. For those who are allergic, or vegeterian they are able to build and customize
+                    their meal preps to fit their needs.
+                </p>
+            </div>
+
+            <!-- <div class="project-container project-card">
+                <h3 class="project-title">Greeny Earth</h3>
+                <p class="project-details">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                    ratione vel inventore labore commodi modi quos culpa aut saepe!
+                    Alias!
+                </p>
+            </div> -->
+        </div>
+    </section> 
+
+        <!-- Contact section -->
+        <section class="contact" id="contact">
+            <h2>Get In Touch With Me</h2>
+            <div class="contact-form-container">
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xaygrgwp" method="POST">
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Message</label>
+                            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+                        </div>
+                        <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social accounts - Fixed to the right -->
+        <!-- <div class="socials">
+            <a href="" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy" class="socicon" /></a>
+            <a href="#" target="_blank"><img src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon" /></a>
+            <a href="#" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
+            <a href="#" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon" /></a>
+        </div> -->
+          
+        <footer>
+            <p>&copy; 2023 Irene Murugi. All rights reserved.</p>
+        </footer>
+        
+    
+    </body>
+</html>
